@@ -1,0 +1,213 @@
+html{
+    height: 100%;
+    margin: 0;
+}
+
+body{
+    font-family: arial,sans-serif;
+}
+
+/* NAVBAR SECTION */
+
+#navbar{
+    display: grid;
+    grid-template-columns: 1fr 70px 70px 70px 80px;
+    grid-template-rows: 50px;
+    grid-template-areas: ". gmail images menu singin";
+}
+
+a{
+    text-decoration: none;
+    color: rgba(0,0,0,0.87);
+    font-size: 13px;
+}
+
+#gmail{
+    grid-area: gmail;
+    justify-self: center;
+    align-self: center;
+}
+
+#images{
+    grid-area: images;
+    justify-self: center;
+    align-self: center;
+}
+
+#menu{
+    color: rgba(0,0,0,0.87);
+    opacity: .55;
+    grid-area: menu;
+    justify-self: center;
+    align-self: center;
+}
+
+#signin{
+    grid-area: singin;
+    justify-self: center;
+    align-self: center;
+    border: 1px solid #4285f4;
+    background: #4285f4;
+    font-weight: bold;
+    outline: none;
+    line-height: 28px;
+    padding: 0 12px;
+    color: #f8f8f8;;
+    border-radius: 3px;
+}
+
+/* MAIN SECTION */
+
+#main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 233px 34px 70px 28px;
+    grid-template-areas: 
+    ". logo ."
+    ". boxtxt ."
+    " . flexbox ."
+    ". offered .";
+}
+
+#logo{
+    grid-area: logo;
+    justify-self: center;
+    align-self: end;
+}
+
+#boxtxt{
+    grid-area: boxtxt;
+    display: flex;
+    align-items: center;
+    padding-right: 13px;
+    margin-top: -5px;
+    background: #fff;
+    display: flex;
+    border: 1px solid #dfe1e5;
+    box-shadow: none;
+    border-radius: 24px;
+    z-index: 3;
+    height: 44px;
+    margin: 0 auto;
+    width: 582px;
+}
+
+#boxtxt input{
+    color: transparent;
+    flex: 100%;
+    white-space: pre;
+    border: none;
+    font: 16px arial,sans-serif;
+    line-height: 34px;
+    height: 34px !important;
+}
+
+
+
+#flexbox{
+    display: inline-block;
+    grid-area: flexbox;
+    justify-self: center;
+    align-self: center;
+}
+
+#google-search-btn{
+    background-image: -webkit-linear-gradient(top,#f5f5f5,#f1f1f1);
+    background-color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    border-radius: 4px;
+    color: #5F6368;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+#random-search-btn{
+    background-image: -webkit-linear-gradient(top,#f5f5f5,#f1f1f1);
+    background-color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    border-radius: 4px;
+    color: #5F6368;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+#google-offered{
+    grid-area: offered;
+    line-height: 28px;
+    justify-self: center;
+    align-self: center;
+    font-size: small;
+}
+
+#google-offered a{
+    color: #1a0dab;
+    text-decoration: none;
+    padding: 0 3px;
+}
+
+/* FOOTER SECTION */
+
+#footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100px 100px 120px 1fr 100px 100px 100px;
+    grid-template-rows: 50px;
+    grid-template-areas: 
+    "adv bsn hsw . pri terms stts";
+    border-top: 1px solid #e4e4e4;
+    background: #f2f2f2;
+}
+
+#adv{
+    grid-area: adv;
+    justify-self: center;
+    align-self: center;
+}
+
+#bsn{
+    grid-area: bsn;
+    justify-self: center;
+    align-self: center;
+}
+
+#hsw{
+    grid-area:hsw;
+    justify-self: center;
+    align-self: center;
+}
+
+#pri{
+    grid-area: pri;
+    justify-self: center;
+    align-self: center;
+}
+
+#terms{
+    grid-area: terms;
+    justify-self: center;
+    align-self: center;
+}
+
+#stts{
+    grid-area: stts;
+    justify-self: center;
+    align-self: center;
+}
